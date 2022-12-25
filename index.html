@@ -13,12 +13,12 @@
     <header>
       <nav>
         <label for="check" class="checkbtn">
-          <i class="fas fa-bars"> </i>
+          <i class="fas fa-bars" onclick="togglemenu()"> </i>
         </label>
         <a href="index.html"><img src="img/gayathriks.png" /> </a>
         <div class="nav-links">
-          <ul>
-            <li><a class="active" href="">Home</a></li>
+          <ul id="menulist">
+            <li><a href="">Home</a></li>
             <li><a href="">About</a></li>
             <li><a href="">Projets</a></li>
             <li><a href="">Learn</a></li>
@@ -26,6 +26,17 @@
           </ul>
         </div>
       </nav>
+      <script>
+        var menulist = document.getElementById("menulist");
+        menulist.style.maxHeight = "0px";
+        function togglemenu() {
+          if (menulist.style.maxHeight == "0px") {
+            menulist.style.maxHeight == "130px";
+          } else {
+            menulist.style.maxHeight == " 0px";
+          }
+        }
+      </script>
       <div class="img">
         <img src="img/pic.png" />
       </div>

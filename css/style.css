@@ -28,9 +28,9 @@ nav img{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
 }
-a.active,a:hover{
-    background: #f0b9df;
-    transition: .5s;
+.nav-links ul li a:hover{
+    color: #ffb9d6;
+
 }
 .img{
     width: 739px;
@@ -52,17 +52,14 @@ a.active,a:hover{
     display: none;
 
 }
-@media (max-width: 952px){
-    nav ul li a{
-        font-size: 16px;
-    }
-}
-@media (max-width: 858px){
+@media only screen and ( max-width: 700px){
     .checkbtn{
         display: block;
+        color: black;
     }
-    ul{
-        position: fixed;
+    .nav-links ul{
+        position: absolute;
+        display: block;
         width: 100%;
         height: 100vh;
         background: #ffb9d6;
@@ -71,16 +68,14 @@ a.active,a:hover{
         text-align: center;
         transition: all.5s;
     }
-    nav ul li{
-        display: block;
+    .nav-links ul li{
+        display: block; 
         margin: 50px 0;
         line-height: 30px;
     }
-    nav ul li a{
+    .nav-links ul li a{
         font-size: 20px;
+        color: black;
     }
-    a:hover,a.active{
-        background: none;
-        color: rgb(255, 255, 255);
-    }
+
 }
