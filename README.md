@@ -1,1 +1,1 @@
-# gayathriks-dev.github.io
+gayathriks.me
